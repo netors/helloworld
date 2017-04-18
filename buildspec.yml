@@ -1,0 +1,26 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo Installing Gulp...
+      - npm install -g gulp
+      - echo Installing Bower...
+      - npm install -g bower
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+      - echo Installing source Bower dependencies...
+      - bower install --allow-root
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the Node.js code
+      - mocha helloworld.js
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - helloworld.js

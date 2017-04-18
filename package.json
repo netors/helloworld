@@ -1,0 +1,26 @@
+{
+  "name": "helloworld",
+  "version": "0.0.1",
+  "description": "codebuild helloworld",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "mocha helloworld.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netors/helloworld.git"
+  },
+  "keywords": [
+    "codebuild",
+    "helloworld"
+  ],
+  "author": "Ernesto Ruy Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netors/helloworld/issues"
+  },
+  "homepage": "https://github.com/netors/helloworld#readme",
+  "dependencies": {
+    "unit.js": "^2.0.0"
+  }
+}
