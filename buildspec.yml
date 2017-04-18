@@ -1,6 +1,10 @@
 version: 0.1
 
 phases:
+  install:
+    commands:
+      - echo Installing Mocha...
+      - npm install -g mocha
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
@@ -9,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - mocha helloworld.js
+      - npm test
   post_build:
     commands:
       - echo Build completed on `date`
